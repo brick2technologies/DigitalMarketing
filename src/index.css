@@ -1,0 +1,94 @@
+@import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* ================================
+   Font Faces
+================================ */
+
+/* ---------- AQUm 2 Classic (Display / Hero) ---------- */
+@font-face {
+  font-family: "AQUm 2 Classic";
+  src: url("/src/assets/fonts/aqum2/Aqum-2-Classic.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AQUm 2 Classic";
+  src: url("/src/assets/fonts/aqum2/Aqum-2-Classic.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------- AQUm 2 Small (UI / Body) ---------- */
+@font-face {
+  font-family: "AQUm 2 Small";
+  src: url("/src/assets/fonts/aqum2/Aqum-2-Small.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AQUm 2 Small";
+  src: url("/src/assets/fonts/aqum2/Aqum-2-Small.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AQUm 2 Small";
+  src: url("/src/assets/fonts/aqum2/Aqum-2-Small.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AQUm 2 Small";
+  src: url("/src/assets/fonts/aqum2/Aqum-2-Small.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ================================
+   Base Font Assignments (Tailwind v4)
+================================ */
+
+@layer base {
+  html {
+    font-family: "AQUm 2 Small", system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, sans-serif;
+  }
+
+  h1, h2 {
+    font-family: "AQUm 2 Classic", "AQUm 2 Small", system-ui, sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  h3, h4, h5, h6 {
+    font-family: "AQUm 2 Small", system-ui, sans-serif;
+    font-weight: 600;
+  }
+}
+
+/* ================================
+   Utility Classes
+================================ */
+
+@layer utilities {
+  .font-display {
+    font-family: "AQUm 2 Classic", system-ui, sans-serif;
+  }
+
+  .font-ui {
+    font-family: "AQUm 2 Small", system-ui, sans-serif;
+  }
+}
