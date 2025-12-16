@@ -1,9 +1,13 @@
 import { motion } from "framer-motion";
 
+import digitalMarketing from "../assets/digital-marketing.png";
+import seoImg from "../assets/seo.png";
+import socialMedia from "../assets/social-media.png";
+
 const services = [
   {
     title: "Digital Marketing & Ads",
-    image: "src/assets/digital-marketing.png", // illustration-style image
+    image: digitalMarketing,
     points: [
       "Meta & Google performance campaigns",
       "High-intent traffic & leads",
@@ -12,7 +16,7 @@ const services = [
   },
   {
     title: "SEO & Content",
-    image: "src/assets/seo.png",
+    image: seoImg,
     points: [
       "Keyword-driven SEO strategy",
       "Content that builds trust",
@@ -21,7 +25,7 @@ const services = [
   },
   {
     title: "Social Media & Creatives",
-    image: "src/assets/social-media.png",
+    image: socialMedia,
     points: [
       "End-to-end social management",
       "Scroll-stopping creatives & reels",
@@ -29,6 +33,7 @@ const services = [
     ],
   },
 ];
+
 
 export default function ServicesSection() {
   return (
